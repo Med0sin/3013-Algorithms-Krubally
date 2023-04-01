@@ -1,11 +1,10 @@
 /*****************************************************************************
 *                    
-*  Author:           Jarette Greene
-*  Email:            jkgreene0406@my.msutexas.edu / jarettegreene09@gmail.com
+*  Author:           Ahmed krubally
+*  Email:            Ahmedkrubally696@gmail.com
 *  Label:            P01
 *  Title:            Database Indexes... What?!? (not really)
 *  Course:           CMPS 3013
-*  Semester:         Spring 2023
 * 
 *  Description:
 *        This program is used to compare the speed of two data structures 
