@@ -7,23 +7,19 @@
 *  Course:           CMPS 3013
 * 
 *  Description:
-*        This header file contains the Binary Search trees used to create a the 
-*        the database used in the main.cpp file. The AVL trees in this 
-*        program all accepts data from a Json file stored in a vector of structs. This file
-*        contains 8 binary search trees with each searching using a different key
-*        (ID, First Name, Last Name, Email, Phone, Address, Job Title and 
-*         Car Model). Then places all these trees as attributes in a Database where 
-*         the user can access the tree based on what what type of data they would 
-*         like to search by
-* 
-*  Usage:
-*       - create instance of database
-*       - pass in vector of data into constructor
+
+* Within the program, the header file encompasses Binary Search trees,
+which serve as the foundation for constructing the database featured in 
+the main.cpp file. The program integrates AVL trees that receive input from a 
+Json file and store it in a struct vector. The file comprises eight distinct
+ Binary Search trees, each utilizing a distinctive key to execute the search function.
+*       - create  database
+*       - pass in data into constructor
 *       - Use Found function to see if data is stored within database
 *       - and GetNodes to check how much nodes were checked before finding the data.
 * 
 *  Files:           
-*        Database.hpp     :        database header file
+*        Database.hpp   
 *****************************************************************************/
 #pragma once
 #include <iostream>

@@ -3,33 +3,31 @@
 *  Author:           Ahmed krubally
 *  Email:            Ahmedkrubally696@gmail.com
 *  Label:            P01
-*  Title:            Database Indexes... What?!? (not really)
+*  Title:            Database Indexes
 *  Course:           CMPS 3013
 * 
 *  Description:
-*        This program is used to compare the speed of two data structures 
-*		A database of filled with 8 different AVL trees geared to search
-*		a variety of different of data and a Singly Linked list. The program
-*		then searches the database and the list and finds out the time it took
-*		to search each data and displays it to the screen. All data from this file
-*		is read from a Json file filled with 100,000 data points.
-* 
+*        The purpose of this software is to analyze the performance
+of two distinct data structures. The program includes a database 
+consisting of eight AVL trees that are optimized for searching various 
+types of data, as well as a Singly Linked List. By searching through the 
+database and the list, the program measures the duration it takes to complete
+ each search and outputs the results on the screen. All data used in this program is 
+ extracted from a Json file that contains 100,000 data points.
 *  Usage:
 *       - create vector with data
 *		- fill Linked LList with data
 *		- Fill Database
-*		- Search for data in database
-*		- Display time that it took
 * 		- Search for data in Linked List
 *		- Display time that it took
 *		
 *  Files:           
-*        Database.hpp     :        database header file
-*		 Json.hpp		  :		   json header file
-*		 SLList.hpp		  :		   Singly Linked List header file
-*		 Timer.hpp		  :		   Timer header file
-*		 Source.cpp		  :		   the main driver program
-*		random_person_data_01 :    json file containing data
+*        Database.hpp             
+*		 Json.hpp		  		   
+*		 SLList.hpp		  	   
+*		 Timer.hpp		  
+*		 Source.cpp		  
+*		random_person_data_01
 *****************************************************************************/
 //neccesary Libraries
 #include "Database.hpp"

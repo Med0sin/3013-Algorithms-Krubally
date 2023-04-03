@@ -6,13 +6,15 @@
 *  Label:            P01
 *  Title:            linkedlisss
 *  Course:           CMPS 3013
-*  Semester:         Spring 2023
 *
 *  Description:
-*        This Hpp file contains a singly linked list that will contain data
-*        read from a JSON file and will be able to traverse the list to find
-*       data based on varous different keys and determine how much nodes needed
-*
+*       Within this Hpp file, there is a singly linked list that
+stores information obtained from a JSON file. The list enables users 
+to navigate through its nodes to locate data using various keys and 
+ascertain the number of nodes required.
+
+
+
 *
 *  Usage:
 *      - create instance of list
@@ -21,8 +23,8 @@
 *      - find out how many nodes had to be checked before finding the data
 *
 *  Files:
-*        Database.hpp     :        database header file
-*        SLList.hpp       :        the singly linked list
+*        Database.hpp   
+*        SLList.hpp       
 *****************************************************************************/
 //necessary Libraries
 #include <fstream>
