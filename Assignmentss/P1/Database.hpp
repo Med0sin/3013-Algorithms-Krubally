@@ -33,11 +33,11 @@ using namespace std;
  * Description:
  *      struct used to keep all data recieved from the json file together
  * 
- * Public Methods:
+ * Public functions:
  *            jsondata()   //constructor
  *    void    display();   // displays data in the struct
  * 
- * Private Methods:
+ * Private functions:
  *    
  *       N/A
  * 
@@ -139,11 +139,11 @@ struct jsondata {
  * Description:
  *      Node used to store the values within the tree;
  * 
- * Public Methods:
+ * Public functions:
  *            Node()  //constructor
  * 			  Ndode(jsondata) // overloaded constructor
  * 
- * Private Methods:
+ * Private functions:
  *    
  *       N/A
  * 
@@ -215,7 +215,7 @@ struct Node {
  * 		An AVL tree that uses the ID field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				IDAVL()
  * 				~IDAVL()
  * 		void 	insert(jsondata)
@@ -609,7 +609,7 @@ int IDAVL::GetNodes() {
  * 		An AVL tree that uses the First Name field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				FNAVL()
  * 				~FNAVL()
  * 		void 	insert(jsondata)
@@ -1002,7 +1002,7 @@ int FNAVL::GetNodes() {
  * 		An AVL tree that uses the Last Name field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				LNAVL()
  * 				~LNAVL()
  * 		void 	insert(jsondata)
@@ -1395,7 +1395,7 @@ int LNAVL::GetNodes() {
  * 		An AVL tree that uses the Email field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				EMAVL()
  * 				~EMAVL()
  * 		void 	insert(jsondata)
@@ -1788,7 +1788,7 @@ int EMAVL::GetNodes() {
  * 		An AVL tree that uses the Phone number field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				PHAVL()
  * 				~PHAVL()
  * 		void 	insert(jsondata)
@@ -2181,7 +2181,7 @@ int PHAVL::GetNodes() {
  * 		An AVL tree that uses the Address field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				ADAVL()
  * 				~ADAVL()
  * 		void 	insert(jsondata)
@@ -2574,7 +2574,7 @@ int ADAVL::GetNodes() {
  * 		An AVL tree that uses the Job Title field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				JTAVL()
  * 				~JTAVL()
  * 		void 	insert(jsondata)
@@ -2967,7 +2967,7 @@ int JTAVL::GetNodes() {
  * 		An AVL tree that uses the Car Model field of the data as the main key for 
  * 		inseritng and searching.
  * 	
- * Public Methods:
+ * Public functions:
  * 				CMAVL()
  * 				~CMAVL()
  * 		void 	insert(jsondata)
@@ -3361,7 +3361,7 @@ int CMAVL::GetNodes() {
  * 		Class that contains 8 different AVL trees and allows easy access to add and search for
  * 		elements in every list based on the data entered
  * 	
- * Public Methods:
+ * Public functions:
  * 					Database (vector<jsondata>data) 
  * 					~Database()
  * 			bool	FindID(int data) 

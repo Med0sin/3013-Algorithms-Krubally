@@ -124,7 +124,7 @@ public:
      * Description:
      *     Default Constructor
      *
-     * Params:
+     * Parameters::
      *      N/A
      *
      * Returns:
@@ -140,7 +140,7 @@ public:
      * Description:
      *     displays all the data in the list
      *
-     * Params:
+     * Parameters::
      *      N/A
      *
      * Returns:
@@ -159,7 +159,7 @@ public:
      * Description:
      *     Inserts data into the back of the list
      *
-     * Params:
+     * Parameters:
      *      jsondata    d // the data being stored into the list
      *
      * Returns:
@@ -185,7 +185,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      int    key  // the id to be searched
      *
      * Returns:
@@ -214,7 +214,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      string    key
      *
      * Returns:
@@ -243,7 +243,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      string    key
      *
      * Returns:
@@ -272,7 +272,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      string    key
      *
      * Returns:
@@ -301,7 +301,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      string    key
      *
      * Returns:
@@ -330,7 +330,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      string    key
      *
      * Returns:
@@ -359,7 +359,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      string    key
      *
      * Returns:
@@ -388,7 +388,7 @@ public:
      *     is located in the list and also count all the nodes
      *     that had to be checked to find the node
      *
-     * Params:
+     * Parameters::
      *      string    key
      *
      * Returns:
@@ -416,7 +416,7 @@ public:
    *     returns the amount of nodes checked when searching for
    *     the last data being searched for.
    *
-   * Params:
+   * Parameters::
    *      double    key
    *
    * Returns:
