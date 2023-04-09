@@ -27,19 +27,25 @@ specific substring passed into a function.
 using namespace std;
 #define RED termcolor::red
 /**
- * LoadWords
+ * LoadinWords
  * 
  * Description:
  *     This function will be used to fill a instance of the WordsLL
  *    linked list with all the words found in a file.
  * 
- * Params:
+ * Parameters:
  *      N/A
  * 
  * Returns:
- *     WordsLL  :   the linked list filled with words from text document
+ *     WordsLL  
 */
-WordsLL LoadWords() {
+
+
+
+
+
+
+WordsLL LoadinWords() {
   ifstream infile;
   WordsLL words;
   string word;
@@ -58,6 +64,14 @@ WordsLL LoadWords() {
   words.Backsert(word);
   return words;
 }
+
+
+
+
+
+
+
+
 /**
  * FindWords
  * 
@@ -66,12 +80,12 @@ WordsLL LoadWords() {
  *    a substring and saves it to a new list and displays the first
  *    10 matches found
  * 
- * Params:
+ * Parameters:
  *      WordsLL   WordList
  *      string    sub
  * 
  * Returns:
- *     WordsLL    :   the list containing all the words containing the substring  
+ *     WordsLL   
 */
 WordsLL FindWords(WordsLL WordList, string sub) {
   WordsLL match; //list containing all matches 
@@ -98,6 +112,11 @@ WordsLL FindWords(WordsLL WordList, string sub) {
   return match;
 }
 
+
+
+
+
+
 int main() {
   char k;  // character entered by user 
   string word = ""; // the substring being searched for
@@ -105,9 +124,11 @@ int main() {
   WordsLL Matches; // linked list containing matches 
   Timer T; // Timer variable to check how long a function takes to drun 
   double Seconds; // the time
-  Words = LoadWords();
+  Words = LoadinWords();
   cout << "Type the word you would like to search (letter by letter) the search begins after the first three charcters are entered. Type capital Z to quit."
        << endl;
+
+
   while ((k = getch()) != 'Z') { // accepting user input
     T.Start();
     if ((int)k == 127) {
@@ -124,6 +145,11 @@ int main() {
       }
       word += k; // putting all the user entered characters into a string
     }
+
+
+
+
+    
     // displaying the user entered string 
     cout << termcolor::blue << word << termcolor::reset << endl << endl;
     if (word.length() >= 3) { //making sure the substring is atleast 3 characters long

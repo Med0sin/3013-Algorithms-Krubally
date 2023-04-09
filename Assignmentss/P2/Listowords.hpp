@@ -28,12 +28,10 @@ using namespace std;
  *      Node used to store the words from the dictionary into
  * 		the singly linked list
  * 
- * Public Methods:
+ *Methods:
  *            WordNode(string data)  // overloaded constructor
  * 
- * Private Methods:
- *    
- *       N/A
+ * 
  * 
  * Usage: 
  * 
@@ -78,8 +76,6 @@ struct WordNode {
  * 		int 		GetSize();
  * 		string&		operator[](int index)
  * 		void		Print_top_ten(string sub)
- * 
- * Private Methods:
  *      WordNode*	head;
  * 		WordNode*	tail;
  * 		int 		size = 0;
@@ -209,11 +205,9 @@ void Print() {
  * Description:
  *     This method will return the number of items stored in the list
  * 
- * Params:
- *      N/A
  * 
  * Returns:
- *      int		: 	the number of items in the list 
+ *      int
 */
   int Getsize(){
     return size;
@@ -226,10 +220,10 @@ void Print() {
  * 		list using indexing similar to an array 
  * 
  * Params:
- *      int 	index
+ *      int index
  * 
  * Returns:
- *      string&		: 	The address of where the string is stored  
+ *      string&
 */
 string& operator[](int index){
   WordNode* traverse = head; // pointer pointing to head of the list
