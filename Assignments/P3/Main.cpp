@@ -22,11 +22,10 @@ the program in real-time searches the Trie Tree for all the words that begin wit
 *    - enter 3 characters and wait for program to display result of searc
 * 
 *  Files:           
-*        TrieTree.hpp		:	 Singly Linked List header file
-*		     termcolor.hpp	:	 termcolor header file
+*        TrieTrunk.hpp		:	 Singly Linked List header file
 *        timer.hpp      :  timer header file
-*        mygetch.hpp    :  Getch header file
-*        json.hpp       :  Json header file
+*        Getchfile.hpp    :  Getch header file
+*        hellainfo.hpp       :  Json header file
 *        main.cpp       :  main driver
 *****************************************************************************/
 // all header files

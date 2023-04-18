@@ -45,16 +45,14 @@ using namespace std;
 using json = nlohmann::json;
 /**
  * Loaddata
- * 
  * Description:
  * 		Used to load data from json file to a vector
- * 
+ *
  * Parameter
  * 		json	filea
  * 		vector	<jsondata>&data
  * 
  * Return
- * 
  * 		N/A
  */
 void Loaddata(json filea, vector <jsondata>& data) {
@@ -96,15 +94,15 @@ int main() {
 	ifstream A("random_person_data_01.json"); 	// accessing json file
 	json filea = json::parse(A);				
 	Loaddata(filea, data);						// loading data to the vector
-	cout << "Finished Loading to vector" << endl;
+	cout << "completed task: Loading to vector" << endl;
 	LList SLL;
 	for (int i = 0; i < data.size(); i++) {      //filing the singly linked list with data
 		SLL.Insert(data[i]);
 	}
-	cout << "Finished filling Linked List " << endl;
+	cout << "completed task,  filling Linked List " << endl;
 	Database Dbase(data);   					// filing database
-	cout << "Finished filling Database (AVL trees) " << endl;
-	bool found;
+	cout << "completed task,  filling Database (AVL trees) " << endl;
+	bool Located ;
 	cout << endl;
 
 	/**
@@ -113,32 +111,32 @@ int main() {
 	 * 
 	 */
 	T.Start();
-	found = Dbase.FindID(72532);
+	Located  = Dbase.FindID(72532);
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the ID#: 72532 after checking " << Dbase.GetIDnodes() << "in AVL tree " << endl;
+	if (Located ) {
+		cout << "Located  the ID#: 678475 after checking " << Dbase.GetIDnodes() << "in AVL tree " << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
 	T.Start();
-	found = SLL.FindallID(72532);
+	Located  = SLL.FindallID(72532);
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the ID#: 72532 after checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Located  the ID#: 678475 after checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
@@ -148,30 +146,30 @@ int main() {
 	 * 
 	 */
 	T.Start();
-	found = Dbase.FindFN("Pancho");
+	Located  = Dbase.FindFN("Matt");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the First name: Pancho after checking " << Dbase.GetFNnodes() << "in AVL tree " << endl;
+	if (Located ) {
+		cout << "Located  the First name: Matt after checking " << Dbase.GetFNnodes() << "in AVL tree " << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 	}
 	T.Start();
-	found = SLL.FindallFN("Pancho");
+	Located  = SLL.FindallFN("Matt");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the First name Pancho after checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Located  the First name Matt after checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
@@ -181,30 +179,30 @@ int main() {
 	 * 
 	 */
 	T.Start();
-	found = Dbase.FindLN("Klimsch");
+	Located  = Dbase.FindLN("Daimon");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Last name: Klimsch after checking " << Dbase.GetLNnodes() << "in AVL tree " << endl;
+	if (Located ) {
+		cout << "Success! Located  the Last name: Daimon after checking " << Dbase.GetLNnodes() << "in AVL tree " << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 	}
 	T.Start();
-	found = SLL.FindallLN("Klimsch");
+	Located  = SLL.FindallLN("Daimon");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Last name: Klimsch after checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Success! Located  the Last name: Daimon after checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
@@ -214,30 +212,30 @@ int main() {
 * 
 */
 	T.Start();
-	found = Dbase.FindEM("dstrattana@diigo.com");
+	Located  = Dbase.FindEM("Raginaestrda@filgy.com");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Email: dstrattana@diigo.com after checking " << Dbase.GetEMnodes() << endl;
+	if (Located ) {
+		cout << "Located  the Email: Raginaestrda@filgy.com after checking " << Dbase.GetEMnodes() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 	}
 	T.Start();
-	found = SLL.FindallEM("dstrattana@diigo.com");
+	Located  = SLL.FindallEM("Raginaestrda@filgy.com");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Email: dstrattana@diigo.com after checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Located  the Email: Raginaestrda@filgy.com after checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
@@ -247,30 +245,30 @@ int main() {
 * 
 */
 	T.Start();
-	found = Dbase.FindPH("(619) 1599292");
+	Located  = Dbase.FindPH("(590) 2345739");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Phone Number: (619) 1599292 after checking " << Dbase.GetPHnodes() << endl;
+	if (Located ) {
+		cout << "Located  the Phone Number: (590) 2345739 after checking " << Dbase.GetPHnodes() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 	}
 	T.Start();
-	found = SLL.FindallPH("(619) 1599292");
+	Located  = SLL.FindallPH("(590) 2345739");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Phone Number: (619) 1599292 after checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Located  the Phone Number: (590) 2345739 after checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
@@ -280,30 +278,30 @@ int main() {
 * 
 */
 	T.Start();
-	found = Dbase.FindAD("6 Sunbrook Plaza");
+	Located  = Dbase.FindAD("43 shadowbrook trail");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Address: 6 Sunbrook Plaza after checking " << Dbase.GetADnodes() << endl;
+	if (Located ) {
+		cout << "Located  the Address: 43 shadowbrook trail after checking " << Dbase.GetADnodes() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 	}
 	T.Start();
-	found = SLL.FindallAD("6 Sunbrook Plaza");
+	Located  = SLL.FindallAD("43 shadowbrook trail");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Address: 6 Sunbrook Plaza after checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Located  the Address: 43 shadowbrook trail after checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
@@ -313,45 +311,45 @@ int main() {
 * 
 */
 	T.Start();
-	found = Dbase.FindJT("Programmer Analyst III");
+	Located  = Dbase.FindJT("senior QA II");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Job Title: Programmer Analyst III after checking " << Dbase.GetJTnodes() << endl;
+	if (Located ) {
+		cout << "Located  the Job Title: senior QA II after checking " << Dbase.GetJTnodes() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 	}
 	T.Start();
-	found = SLL.FindallJT("Programmer Analyst III");
+	Located  = SLL.FindallJT("senior QA II");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Job Title: Programmer Analyst III checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Located  the Job Title: senior QA II checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
 	T.Start();
-	found = Dbase.FindCM("Range Rover");
+	Located  = Dbase.FindCM("Bentley coop");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Car Model: Range Rover after checking " << Dbase.GetCMnodes() << endl;
+	if (Located ) {
+		cout << "Located  the Car Model: Bentley coop after checking " << Dbase.GetCMnodes() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 	}
 /**
 * Searching for Car Model in the database and Linked list and 
@@ -359,17 +357,17 @@ int main() {
 * 
 */
 	T.Start();
-	found = SLL.FindallCM("Range Rover");
+	Located  = SLL.FindallCM("Bentley coop");
 	T.End();
 	seconds = T.Seconds();
 	Milliseconds = T.MilliSeconds();
-	if (found) {
-		cout << "Found the Car Model: Range Rover checking " << SLL.GetNodesChecked() << endl;
+	if (Located ) {
+		cout << "Located  the Car Model: Bentley coop checking " << SLL.GetNodesChecked() << endl;
 		cout << "Taking " << seconds << " seconds or " << Milliseconds << " milliseconds " << endl;
 		cout << endl;
 	}
 	else {
-		cout << "Data not found";
+		cout << "Data not Located ";
 		cout << endl;
 		cout << endl;
 	}
